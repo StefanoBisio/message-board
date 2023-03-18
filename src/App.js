@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import firebase from "firebase/app";
+// import firebase from "firebase/app";
 import { auth } from "./firebase";
 import Login from "./Login";
 import MessageBoard from "./MessageBoard";

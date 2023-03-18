@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { auth } from "./firebase"; // Import the Firebase authentication service
+// import { auth } from "./firebase";
 
 
 function Login({ login, signup }) {

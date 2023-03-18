@@ -26,7 +26,7 @@ To start the development server, run:
 1. Open the app in your web browser at http://localhost:3000.
 2. Log in or sign up with your email and password.
 3. Write a message and click "Send" to post it to the message board.
-4. Your message will appear at the bottom of the message board.
+4. Your message will appear at the top of the message board.
 
 ## Technologies Used
 

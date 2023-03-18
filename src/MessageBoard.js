@@ -10,7 +10,7 @@ function MessageBoard({ user, logout }) {
     // Fetch messages from Firestore and subscribe to updates
     const unsubscribe = firestore
       .collection("messages")
-      .orderBy("timestamp", "asc")
+      .orderBy("timestamp", "desc")
       .onSnapshot((snapshot) => {
         setMessages(snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
       });

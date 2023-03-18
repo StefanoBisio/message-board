@@ -28,6 +28,11 @@ To start the development server, run:
 3. Write a message and click "Send" to post it to the message board.
 4. Your message will appear at the top of the message board.
 
+## Live deployments
+
+Currently deployed on [Netlify](https://cosmic-unicorn-00de6b.netlify.app/)
+
+
 ## Technologies Used
 
 - React

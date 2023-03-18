@@ -1,0 +1,131 @@
+.App {
+  background-color: #f2f2f2;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.Login {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.Login h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.Login input {
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.Login input:focus {
+  outline: none;
+  border-color: #0077ff;
+}
+
+.Login button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #0077ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.Login button:hover {
+  background-color: #005dff;
+}
+
+.MessageBoard {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+.MessageBoard header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.MessageBoard h1 {
+  font-size: 2rem;
+}
+
+.MessageBoard button {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #0077ff;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.MessageBoard button:hover {
+  color: #005dff;
+}
+
+.MessageBoard .messages {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.MessageBoard .message {
+  margin: 0.5rem 0;
+}
+
+.MessageBoard form {
+  display: flex;
+  align-items: center;
+}
+
+.MessageBoard input {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.MessageBoard input:focus {
+  outline: none;
+  border-color: #0077ff;
+}
+
+.MessageBoard button[type="submit"] {
+  margin-left: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #0077ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+

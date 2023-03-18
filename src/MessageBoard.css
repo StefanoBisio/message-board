@@ -1,0 +1,16 @@
+.MessageBoard header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .MessageBoard .messages {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .MessageBoard .message {
+    margin: 0.5rem 0;
+  }
+  

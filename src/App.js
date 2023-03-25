@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
-// import firebase from "firebase/app";
 import { auth } from "./firebase";
-import Login from "./Login";
-import MessageBoard from "./MessageBoard";
+
+
+import Login from "./components/Login/Login";
+import MessageBoard from "./components/MessageBoard/MessageBoard";
+// import Navigation from "./components/Navigation/Navigation";
+
 import "./App.css";
 
 function App() {
@@ -18,25 +21,21 @@ function App() {
     return () => unsubscribe();
   }, []);
 
-  const login = async (email, password) => {
-    await auth.signInWithEmailAndPassword(email, password);
-  };
-
-  const signup = async (email, password) => {
-    await auth.createUserWithEmailAndPassword(email, password);
-  };
-
   const logout = async () => {
     await auth.signOut();
   };
 
   return (
     <div className="App">
+      {/* <Navigation user={user} logout={logout}/> */}
+
+      {/* If the user is logged in, show the message board, otherwise show the login form */}
       {user ? (
         <MessageBoard user={user} logout={logout} />
       ) : (
-        <Login login={login} signup={signup} />
+        <Login />
       )}
+
     </div>
   );
 }

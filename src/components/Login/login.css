@@ -1,0 +1,7 @@
+.login-google {
+    background-image: url('https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg');
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-left: 40px;
+}

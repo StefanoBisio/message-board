@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { firestore } from "./firebase";
+import { firestore } from "../../firebase";
 import "./MessageBoard.css";
 
 function MessageBoard({ user, logout }) {
@@ -35,17 +35,32 @@ function MessageBoard({ user, logout }) {
 
   return (
     <div className="MessageBoard">
+      
       <header>
-        <h1>Message Board</h1>
+        {/* h1 element that welcomes you, calling you by name, or email */} 
+        <h1>Welcome, {user.displayName || user.email}!</h1>
         <button onClick={logout}>Logout</button>
       </header>
+
       <div className="messages">
+
+        {/* map through message object. display author avatar, name and message */} 
         {messages.map((message) => (
           <div key={message.id} className="message">
-            <strong>{message.author}:</strong> {message.content}
+
+            {/* if user.photoURL is not null, display it */}
+            {user.photoURL && <img className="user-avatar" title={message.author} src={user.photoURL} alt="avatar" />}
+
+            {/* display the name of the user who wrote the message */}
+            {/* <strong className="user-name">{message.author}:</strong>  */}
+
+            {message.content}
           </div>
         ))}
+
+
       </div>
+
       <form onSubmit={sendMessage}>
         <input
           type="text"
@@ -56,6 +71,7 @@ function MessageBoard({ user, logout }) {
         />
         <button type="submit">Send</button>
       </form>
+      
     </div>
   );
 }
